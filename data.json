@@ -1,0 +1,386 @@
+{
+	"legends": {
+		"list": [
+			"bodvar",
+			"cassidy",
+			"orion",
+			"lordvraxx",
+			"gnash",
+			"queennai",
+			"hattori",
+			"sirroland",
+			"scarlet",
+			"thatch",
+			"ada",
+			"sentinel",
+			"lucien",
+			"teros",
+			"brynn",
+			"asuri",
+			"barraza",
+			"ember",
+			"azoth",
+			"koji",
+			"ulgrim",
+			"diana",
+			"jhala",
+			"kor",
+			"wushang",
+			"val",
+			"ragnir",
+			"cross",
+			"mirage",
+			"nix"
+		],
+		"legend": {
+			"bodvar": {
+				"name": "Bödvar",
+				"price": "2300",
+				"stats": {
+					"strength": 6,
+					"dexterity": 6,
+					"defense": 5,
+					"speed": 5
+				},
+				"weapons": [
+					"sword",
+					"hammer"
+				],
+				"pic": "http://wiki.brawlhalla.com/images/thumb/5/58/Bodvar_Avatar.png/100px-Bodvar_Avatar.png"
+			},
+			"cassidy": {
+				"name": "Cassidy",
+				"price": "2300",
+				"stats": {
+					"strength": 6,
+					"dexterity": 8,
+					"defense": 4,
+					"speed": 4
+				},
+				"weapons": [
+					"blasters",
+					"hammer"
+				],
+				"pic": "http://i.imgur.com/creFKtf.png",
+				"pic": "http://wiki.brawlhalla.com/images/thumb/f/f5/Cassidy_Avatar.png/100px-Cassidy_Avatar.png"
+			},
+			"orion": {
+				"name": "Orion",
+				"price": "2300",
+				"stats": {
+					"strength": 4,
+					"dexterity": 6,
+					"defense": 6,
+					"speed": 6
+				},
+				"weapons": [
+					"spear",
+					"rocket_lance"
+				],
+				"pic": "http://wiki.brawlhalla.com/images/thumb/8/82/Orion_Avatar.png/100px-Orion_Avatar.png"
+			},
+			"lordvraxx": {
+				"name": "Lord Vraxx",
+				"price": "3900",
+				"stats": {
+					"strength": 4,
+					"dexterity": 8,
+					"defense": 4,
+					"speed": 6
+				},
+				"weapons": [
+					"blasters",
+					"rocket_lance"
+				],
+				"pic": "http://wiki.brawlhalla.com/images/thumb/9/93/LordVraxx_Avatar.png/100px-LordVraxx_Avatar.png"
+			},
+			"gnash": {
+				"name": "Gnash",
+				"price": "5400",
+				"stats": {
+					"strength": 7,
+					"dexterity": 3,
+					"defense": 5,
+					"speed": 7
+				},
+				"weapons": [
+					"spear",
+					"hammer"
+				],
+				"pic": "http://wiki.brawlhalla.com/images/thumb/7/79/Gnash_Avatar.png/100px-Gnash_Avatar.png"
+			},
+			"queennai": {
+				"name": "Queen Nai",
+				"price": "2300",
+				"stats": {
+					"strength": 7,
+					"dexterity": 4,
+					"defense": 8,
+					"speed": 3
+				},
+				"weapons": [
+					"spear",
+					"katars"
+				],
+				"pic": "http://wiki.brawlhalla.com/images/thumb/9/9a/QueenNai_Avatar.png/100px-QueenNai_Avatar.png"
+			},
+			"hattori": {
+				"name": "Hattori",
+				"price": "5400",
+				"stats": {
+					"strength": 4,
+					"dexterity": 6,
+					"defense": 4,
+					"speed": 8
+				},
+				"weapons": [
+					"sword",
+					"spear"
+				],
+				"pic": "http://wiki.brawlhalla.com/images/thumb/4/43/Hattori_Avatar.png/100px-Hattori_Avatar.png"
+			},
+			"sirroland": {
+				"name": "Sir Roland",
+				"price": "5400",
+				"stats": {
+					"strength": 5,
+					"dexterity": 5,
+					"defense": 8,
+					"speed": 4
+				},
+				"weapons": [
+					"sword",
+					"rocket_lance"
+				],
+				"pic": "http://wiki.brawlhalla.com/images/thumb/2/2f/SirRoland_Avatar.png/100px-SirRoland_Avatar.png"
+			},
+			"scarlet": {
+				"name": "Scarlet",
+				"price": "5400",
+				"stats": {
+					"strength": 8,
+					"dexterity": 5,
+					"defense": 5,
+					"speed": 4
+				},
+				"weapons": [
+					"rocket_lance",
+					"hammer"
+				],
+				"pic": "http://wiki.brawlhalla.com/images/thumb/4/41/Scarlet_Avatar.png/100px-Scarlet_Avatar.png"
+			},
+			"thatch": {
+				"name": "Thatch",
+				"price": "3900",
+				"stats": {
+					"strength": 7,
+					"dexterity": 5,
+					"defense": 3,
+					"speed": 7
+				},
+				"weapons": [
+					"sword",
+					"blasters"
+				],
+				"pic": "http://wiki.brawlhalla.com/images/thumb/3/33/Thatch_Avatar.png/100px-Thatch_Avatar.png"
+			},
+			"ada": {
+				"name": "Ada",
+				"price": "3900",
+				"stats": {
+					"strength": 6,
+					"dexterity": 7,
+					"defense": 3,
+					"speed": 6
+				},
+				"weapons": [
+					"blasters",
+					"spear"
+				],
+				"pic": "http://wiki.brawlhalla.com/images/thumb/0/04/Ada_Avatar.png/100px-Ada_Avatar.png"
+			},
+			"sentinel": {
+				"name": "Sentinel",
+				"pic": "http://wiki.brawlhalla.com/images/thumb/d/dc/Sentinel_Avatar.png/100px-Sentinel_Avatar.png"
+			},
+			"lucien": {
+				"name": "Lucien",
+				"pic": "http://wiki.brawlhalla.com/images/thumb/7/7d/Lucien_Avatar.png/100px-Lucien_Avatar.png"
+			},
+			"teros": {
+				"name": "Teros",
+				"pic": "http://wiki.brawlhalla.com/images/thumb/d/d7/Teros_Avatar.png/100px-Teros_Avatar.png"
+			},
+			"brynn": {
+				"name": "Brynn",
+				"pic": "http://wiki.brawlhalla.com/images/thumb/8/81/Brynn_Avatar.png/100px-Brynn_Avatar.png"
+			},
+			"asuri": {
+				"name": "Asuri",
+				"price": "5400",
+				"stats": {
+					"strength": 4,
+					"dexterity": 7,
+					"defense": 5,
+					"speed": 6
+				},
+				"weapons": [
+					"sword",
+					"katars"
+				],
+				"pic": "http://wiki.brawlhalla.com/images/thumb/4/4a/Asuri_Avatar.png/100px-Asuri_Avatar.png"
+			},
+			"barraza": {
+				"name": "Barraza",
+				"pic": "http://wiki.brawlhalla.com/images/thumb/1/17/Barraza_Avatar2.png/100px-Barraza_Avatar2.png"
+			},
+			"ember": {
+				"name": "Ember",
+				"pic": "http://wiki.brawlhalla.com/images/thumb/f/fd/Ember_Avatar.png/100px-Ember_Avatar.png"
+			},
+			"azoth": {
+				"name": "Azoth",
+				"pic": "http://wiki.brawlhalla.com/images/thumb/0/06/Azoth_Avatar.png/100px-Azoth_Avatar.png"
+			},
+			"koji": {
+				"name": "Koji",
+				"pic": "http://wiki.brawlhalla.com/images/thumb/0/06/Koji_Portrait.png/100px-Koji_Portrait.png"
+			},
+			"ulgrim": {
+				"name": "Ulgrim",
+				"pic": "http://wiki.brawlhalla.com/images/thumb/4/48/Ulgrim_Avatar.png/100px-Ulgrim_Avatar.png"
+			},
+			"diana": {
+				"name": "Diana",
+				"pic": "http://wiki.brawlhalla.com/images/thumb/b/b6/Diana_Avatar.png/100px-Diana_Avatar.png"
+			},
+			"jhala": {
+				"name": "Jhala",
+				"pic": "http://wiki.brawlhalla.com/images/thumb/6/67/Jhala_Avatar.png/100px-Jhala_Avatar.png"
+			},
+			"kor": {
+				"name": "Kor",
+				"pic": "http://wiki.brawlhalla.com/images/thumb/c/ce/KorAvatarHigh.png/100px-KorAvatarHigh.png"
+			},
+			"wushang": {
+				"name": "Wu Shang",
+				"pic": "http://wiki.brawlhalla.com/images/thumb/c/ca/WuShangAvatar.png/100px-WuShangAvatar.png"
+			},
+			"val": {
+				"name": "Val",
+				"pic": "http://wiki.brawlhalla.com/images/thumb/1/1e/ValAvatar3.png/100px-ValAvatar3.png"
+			},
+			"ragnir": {
+				"name": "Ragnir",
+				"pic": "http://wiki.brawlhalla.com/images/thumb/f/f5/RagnirAvatar2.png/100px-RagnirAvatar2.png"
+			},
+			"cross": {
+				"name": "Cross",
+				"pic": "http://wiki.brawlhalla.com/images/thumb/2/22/CrossAvatar2.png/100px-CrossAvatar2.png"
+			},
+			"mirage": {
+				"name": "Mirage",
+				"pic": "http://wiki.brawlhalla.com/images/thumb/a/a0/MirageAvatar.png/100px-MirageAvatar.png"
+			},
+			"nix": {
+				"name": "Nix",
+				"pic": "http://wiki.brawlhalla.com/images/thumb/b/b9/NixAvatar5.png/100px-NixAvatar5.png"
+			}
+		}
+	},
+	"weapons_list": [
+		"hammer",
+		"rocketlance",
+		"sword",
+		"blasters",
+		"spear",
+		"katars",
+		"axe",
+		"bow",
+		"gaunts",
+		"scythe"
+	],
+	"weapons": {
+		"sword": {
+			"name": "Sword",
+			"combos": [
+				{
+					"s": ["down-light", "recovery"],
+					"f": ["damage"],
+					"d": "easy",
+					"dn": 0
+				}
+			],
+			"pic": "http://wiki.brawlhalla.com/images/9/95/SwordIcon.png"
+		},
+		"katars": {
+			"name": "Katars",
+			"combos": [
+				{
+					"s": ["down-light", "jump", "gc:down-light", "jump", "side-air"],
+					"f": ["bimples"],
+					"d": "expert",
+					"dn": 4
+				}
+			],
+			"pic": "http://wiki.brawlhalla.com/images/3/3c/KatarsIcon.png"
+		},
+		"hammer": {
+			"name": "Hammer",
+			"combos": [
+			],
+			"pic": "http://wiki.brawlhalla.com/images/d/de/HammerIcon.png"
+		},
+		"rocketlance": {
+			"name": "Rocket Lance",
+			"combos": [
+			],
+			"pic": "http://wiki.brawlhalla.com/images/2/2a/LanceIcon.png"
+		},
+		"blasters": {
+			"name": "Blasters",
+			"combos": [
+			],
+			"pic": "http://wiki.brawlhalla.com/images/a/a0/BlastersIcon.png"
+		},
+		"spear": {
+			"name": "Spear",
+			"combos": [
+			],
+			"pic": "http://wiki.brawlhalla.com/images/a/a5/SpearIcon.png"
+		},
+		"axe": {
+			"name": "Axe",
+			"combos": [
+			],
+			"pic": "http://wiki.brawlhalla.com/images/5/5d/AxeIcon.png"
+		},
+		"bow": {
+			"name": "Bow",
+			"combos": [
+			],
+			"pic": "http://wiki.brawlhalla.com/images/2/23/BowIcon.png"
+		},
+		"gaunts": {
+			"name": "Gauntlets",
+			"combos": [
+			],
+			"pic": "http://wiki.brawlhalla.com/images/d/d8/GauntletsIcon.png"
+		},
+		"scythe": {
+			"name": "Scythe",
+			"combos": [
+			],
+			"pic": "http://wiki.brawlhalla.com/images/6/64/ScytheIcon.png"
+		}
+	},
+	"exclusive_combos": {
+		"asuri": {
+			"sword": [
+			],
+			"katars": [
+			]
+		}
+	}
+	
+}

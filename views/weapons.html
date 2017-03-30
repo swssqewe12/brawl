@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>brawl-db</title>
+	<link rel="stylesheet" type="text/css" href="/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="/css/w_styles.css">
+</head>
+<body>
+	<div id="header">
+		<p> brawl-db </p>
+		<div class="buttons">
+			<a href="/"><div class="button">Legends</div></a>
+			<a href="/w"><div class="button selected">Weapons</div></a>
+			<a href="/s"><div class="button">Stats</div></a>
+		</div>
+	</div>
+	<h2> Welcome to brawl-db </h2>
+	<b> Select a weapon... </b><br>
+	<div class="w_weapon_list">
+		<% for (var item in list) { %>
+			<% var w = list[item]; %>
+			<% var weapon = weapons[w]; %>
+			<a href="/w/<%=w%>" class="w_weapon"> <img src="<%=weapon.pic%>"> <p> <%=weapon.name%> </p> </a>
+		<% } %>
+	</div>
+</body>
+</html>

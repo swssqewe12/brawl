@@ -1,0 +1,62 @@
+#header {
+	width: 100%;
+	height: 52px;
+	background-image: url('/img/pattern.jpg');
+	position: relative;
+	z-index: 10000;
+}
+
+#header p {
+	position: absolute;
+	top: 0px;
+	left: 150px;
+	font-size: 24px;
+	color: orange;
+	line-height: 52px;
+}
+
+#header .button {
+	/*width: 60px;*/
+	position: relative;
+	display: inline-block;
+	margin: 6px;
+	margin-left: 44px;
+	text-align: center;
+	color: white;
+	padding: 8px;
+	border: 2px solid white;
+	cursor: pointer;
+	transition: border-color 0.3s, color 0.3s, background-color 0.3s;
+}
+
+#header .button:hover {
+	border-color: orange;
+}
+
+#header .button:active {
+	background-color: rgba(255, 165, 0, 0.5);
+	color: white;
+}
+
+#header .button:after {
+	content: '';
+	position: absolute;
+	left: -40px;
+	top: calc(50% - 16px);
+	width: 32px;
+	height: 32px;
+	background-image: url('/img/arrow_left.png');
+	transition: left 0.3s;
+}
+
+#header .button:hover:after {
+	left: -30px;
+}
+
+iframe {
+	position: absolute;
+	top: -65px;
+	left: 0px;
+	width: 100%;
+	height: 2000px;
+}

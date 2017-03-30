@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title><%=weapon%> - Combos - brawl-db</title>
+	<link rel="stylesheet" type="text/css" href="/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<body>
+	<div id="header">
+		<p> brawl-db </p>
+		<div class="buttons">
+			<a href="/"><div class="button">Legends</div></a>
+			<a href="/w"><div class="button selected">Weapons</div></a>
+			<a href="/s"><div class="button">Stats</div></a>
+		</div>
+	</div>
+	<h2> Welcome to <%=weapon%> </h2>
+	<b> You are looking at the combos of this weapon... </b><br><br>
+	<% for (var i in combos) { %>
+		<% var c = combos[i] %>
+		<%= c.s %><br>
+		(<%= c.f %>)<br>
+		difficulty: <%= c.d %><br><br>
+	<% } %>
+</body>
+</html>

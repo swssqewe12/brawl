@@ -1,0 +1,45 @@
+<html>
+<head>
+	<title><%=legend%> - brawl-db</title>
+	<link rel="stylesheet" type="text/css" href="/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="/css/i_styles.css">
+</head>
+<body>
+	<div id="header">
+		<p> brawl-db </p>
+		<div class="buttons">
+			<a href="/"><div class="button selected">Legends</div></a>
+			<a href="/w"><div class="button">Weapons</div></a>
+			<a href="/s"><div class="button">Stats</div></a>
+		</div>
+	</div>
+	<div class="i_wrapper">
+		<div class="i_left">
+			<div class="i_item">
+				<img src="<%=data.pic%>">
+				<p> <%=legend%> </p>
+			</div>
+			<a class="btn" href="/c/e/<%=legend%>">EXCLUSIVE COMBOS</a>
+		</div>
+		<div class="i_right">
+			<u>Price:</u> <%=data.price%> coins
+			<span class="i_h">Weapons</span>
+			<% for (var i in data.weapons) { %>
+				<% var w = data.weapons[i]; %>
+				<% var weapon = weapons[w]; %>
+				<a href="/w/<%=w%>"><div class="i_weapon">
+					<img src="<%=weapon.pic%>">
+					<p class="text"><%=weapon.name%></p>
+					<a class="btn-white" href="/c/<%=w%>" style="margin-left: 10px;">COMBOS</a>
+				</div></a>
+			<% } %><br>
+			<span class="i_h">Stats</span>
+			<% for (var k in data.stats) { %>
+				<% var v = data.stats[k]; %>
+				<%=k%>: <%=v%><br>
+			<% } %>
+		</div>
+	</div>
+</body>
+</html>

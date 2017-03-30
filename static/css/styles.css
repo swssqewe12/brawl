@@ -1,0 +1,47 @@
+#header {
+	width: 100%;
+	height: 50px;
+	background: #111;
+}
+
+#header p {
+	float: left;
+	padding-left: 30px;
+	line-height: 50px;
+	font-size: 24px;
+	color: orange;
+}
+
+#header .buttons {
+	float: right;
+	margin-right: 30px;
+}
+
+#header .button {
+	display: inline-block;
+	margin-right: 30px;
+	text-align: center;
+	line-height: 50px;
+	color: white;
+	cursor: pointer;
+	transition: border-color 0.3s, color 0.3s, background-color 0.3s;
+}
+
+#header .button:hover {
+	color: orange;
+}
+
+#header .selected {
+	position: relative;
+	color: orange;
+}
+
+#header .selected::after {
+	content: '';
+	position: absolute;
+	top: calc(100% - 8px);
+	left: calc(50% - 45px);
+	width: 90px;
+	height: 2px;
+	background: orange;
+}

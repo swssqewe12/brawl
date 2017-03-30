@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>brawl-db</title>
+	<link rel="stylesheet" type="text/css" href="/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="/css/l_styles.css">
+</head>
+<body>
+	<div id="header">
+		<p> brawl-db </p>
+		<div class="buttons">
+			<a href="/"><div class="button selected">Legends</div></a>
+			<a href="/w"><div class="button">Weapons</div></a>
+			<a href="/s"><div class="button">Stats</div></a>
+		</div>
+	</div>
+	<h2> Legends </h2>
+	<span class="l_list_wrapper">
+		<div class="l_list">
+			<% for (var i in legends) { %>
+				<% var l = legends[i] %>
+				<div class="l_item">
+					<a href="/l/<%=l%>">
+						<img src="<%=data[l].pic%>">
+						<p> <%= data[l].name %> </p>
+					</a>
+				</div>
+			<% } %>
+		</div>
+	</span>
+</body>
+</html>
