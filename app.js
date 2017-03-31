@@ -3,6 +3,8 @@ var app = express()
 
 var data = require('./data');
 
+app.set('port', (process.env.PORT || 8000))
+
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
@@ -43,6 +45,6 @@ app.get('/s', function(req, res) {
 	res.render("stats");
 })
 
-app.listen(8000, function () {
+app.listen(app.get('port'), function () {
   console.log('brawl-db is up and running!')
 })
