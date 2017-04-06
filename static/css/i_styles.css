@@ -43,7 +43,7 @@
 
 .i_weapon {
 	position: relative;
-	width: 225px;
+	width: 256px;
 	margin-bottom: 10px;
 	height: 48px;
 	background-color: #111;
@@ -89,4 +89,76 @@
 
 .i_weapon:active {
 	transform: scale(0.9);
+}
+
+.i_stat {
+	position: relative;
+	width: 175px;
+	margin-bottom: 0px;
+	height: 28px;
+	background-color: #111;
+}
+
+.i_stat img {
+	position: absolute;
+	top: 6px;
+	left: 6px;
+}
+
+.i_stat .text {
+	position: absolute;
+	top: 0px;
+	left: 32px;
+	width: calc(100% - 52px);
+	font-size: 14px;
+	line-height: 28px;
+	color: white;
+	transition: color 0.3s;
+	z-index: 1092;
+}
+
+.i_stat .color_red {
+	color: #D2362F;
+}
+
+.i_stat .color_yellow {
+	color: #C7C64C;
+}
+
+.i_stat .color_blue {
+	color: #4788E2;
+}
+
+.i_stat .color_purple {
+	color: #9273B7;
+}
+
+.i_stat .color_dark_red {
+	color: darkred;
+}
+
+.i_stat .color_dark_yellow {
+	color: darkgreen;
+}
+
+.i_stat .color_dark_blue {
+	color: darkblue;
+}
+
+.i_stat .color_dark_purple {
+	color: purple;
+}
+
+.i_stat_value {
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	width: 20px;
+	border-radius: 2px;
+	background-color: white;
+	text-align: center;
+	line-height: 20px;
+	font-size: 14px;
+	font-weight: 700;
+	z-index: 1093;
 }

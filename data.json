@@ -599,19 +599,23 @@
 	"stats": {
 		"strength": {
 			"name": "Strength",
-			"pic": ""
+			"pic": "http://wiki.brawlhalla.com/images/thumb/c/c6/Strength_Icon.png/15px-Strength_Icon.png",
+			"color": "red"
 		},
 		"dexterity": {
 			"name": "Dexterity",
-			"pic": ""
+			"pic": "http://wiki.brawlhalla.com/images/thumb/3/3e/Dexterity_Icon.png/15px-Dexterity_Icon.png",
+			"color": "yellow"
 		},
 		"defense": {
 			"name": "Defense",
-			"pic": ""
+			"pic": "http://wiki.brawlhalla.com/images/thumb/c/c8/Armor_Icon.png/15px-Armor_Icon.png",
+			"color": "blue"
 		},
 		"speed": {
 			"name": "Speed",
-			"pic": ""
+			"pic": "http://wiki.brawlhalla.com/images/thumb/6/6a/Speed_Icon.png/15px-Speed_Icon.png",
+			"color": "purple"
 		}
 	}
 	
