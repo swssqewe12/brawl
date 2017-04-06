@@ -595,6 +595,24 @@
 			"katars": [
 			]
 		}
+	},
+	"stats": {
+		"strength": {
+			"name": "Strength",
+			"pic": ""
+		},
+		"dexterity": {
+			"name": "Dexterity",
+			"pic": ""
+		},
+		"defense": {
+			"name": "Defense",
+			"pic": ""
+		},
+		"speed": {
+			"name": "Speed",
+			"pic": ""
+		}
 	}
 	
 }

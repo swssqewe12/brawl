@@ -36,10 +36,12 @@
 			<% } %><br>
 			<span class="i_h">Stats</span>
 			<% for (var k in data.stats) { %>
+				<% var stat = all_stats[k]; %>
 				<% var v = data.stats[k]; %>
-				<%=k%>: <%=v%><br>
+				<%=stat.name%>: <%=v%><br>
 			<% } %>
 		</div>
 	</div>
+	<div id="footer">© brawl-db 2017+</div>
 </body>
 </html>

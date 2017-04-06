@@ -16,7 +16,7 @@ app.get('/', function(req, res) {
 
 app.get('/l/:l', function(req, res) {
 	var l = req.params.l;
-	res.render("legend.html", {'legend': l, 'data': data.legends.legend[l], 'weapons': data.weapons});
+	res.render("legend.html", {'legend': l, 'data': data.legends.legend[l], 'weapons': data.weapons, 'all_stats': data.stats});
 })
 
 app.get('/w', function(req, res) {
