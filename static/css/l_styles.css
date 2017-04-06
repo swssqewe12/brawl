@@ -1,3 +1,8 @@
+h2,b {
+	display: block;
+	text-align: center;
+}
+
 .l_list {
 	margin: 10px;
 }

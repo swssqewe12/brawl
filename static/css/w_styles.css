@@ -4,15 +4,17 @@ h2,b {
 }
 
 .w_weapon_list {
-	width: 175px;
+	width: 380px;
 	margin: 20px auto;
 }
 
 .w_weapon {
 	position: relative;
-	display: block;
+	display: inline-block;
 	width: 175px;
 	height: 56px;
+	margin-left: 5px;
+	margin-right: 5px;
 	margin-bottom: 10px;
 	background-color: #111;
 	color: white;

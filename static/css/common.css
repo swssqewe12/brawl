@@ -93,3 +93,19 @@ h4 {
 	background-color: #ddd;
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
+
+#footer {
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	width: 200px;
+	height: 30px;
+	border-top: 3px solid #eee;
+	border-right: 3px solid #eee;
+	font-size: 16px;
+	line-height: 30px;
+	text-align: center;
+	background: #111;
+	color: white;
+}

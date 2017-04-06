@@ -30,7 +30,8 @@
 			"ragnir",
 			"cross",
 			"mirage",
-			"nix"
+			"nix",
+			"mordex"
 		],
 		"legend": {
 			"bodvar": {
@@ -201,18 +202,62 @@
 			},
 			"sentinel": {
 				"name": "Sentinel",
+				"price": "3900",
+				"stats": {
+					"strength": 5,
+					"dexterity": 4,
+					"defense": 7,
+					"speed": 6
+				},
+				"weapons": [
+					"katars",
+					"hammer"
+				],
 				"pic": "http://wiki.brawlhalla.com/images/thumb/d/dc/Sentinel_Avatar.png/100px-Sentinel_Avatar.png"
 			},
 			"lucien": {
 				"name": "Lucien",
+				"price": "5400",
+				"stats": {
+					"strength": 3,
+					"dexterity": 5,
+					"defense": 6,
+					"speed": 8
+				},
+				"weapons": [
+					"blasters",
+					"katars"
+				],
 				"pic": "http://wiki.brawlhalla.com/images/thumb/7/7d/Lucien_Avatar.png/100px-Lucien_Avatar.png"
 			},
 			"teros": {
 				"name": "Teros",
+				"price": "3900",
+				"stats": {
+					"strength": 8,
+					"dexterity": 3,
+					"defense": 6,
+					"speed": 5
+				},
+				"weapons": [
+					"axe",
+					"hammer"
+				],
 				"pic": "http://wiki.brawlhalla.com/images/thumb/d/d7/Teros_Avatar.png/100px-Teros_Avatar.png"
 			},
 			"brynn": {
 				"name": "Brynn",
+				"price": "5400",
+				"stats": {
+					"strength": 5,
+					"dexterity": 5,
+					"defense": 5,
+					"speed": 7
+				},
+				"weapons": [
+					"spear",
+					"axe"
+				],
 				"pic": "http://wiki.brawlhalla.com/images/thumb/8/81/Brynn_Avatar.png/100px-Brynn_Avatar.png"
 			},
 			"asuri": {
@@ -232,65 +277,234 @@
 			},
 			"barraza": {
 				"name": "Barraza",
+				"price": "5400",
+				"stats": {
+					"strength": 6,
+					"dexterity": 4,
+					"defense": 8,
+					"speed": 4
+				},
+				"weapons": [
+					"blasters",
+					"axe"
+				],
 				"pic": "http://wiki.brawlhalla.com/images/thumb/1/17/Barraza_Avatar2.png/100px-Barraza_Avatar2.png"
 			},
 			"ember": {
 				"name": "Ember",
+				"price": "5400",
+				"stats": {
+					"strength": 6,
+					"dexterity": 6,
+					"defense": 3,
+					"speed": 7
+				},
+				"weapons": [
+					"bow",
+					"katars"
+				],
 				"pic": "http://wiki.brawlhalla.com/images/thumb/f/fd/Ember_Avatar.png/100px-Ember_Avatar.png"
 			},
 			"azoth": {
 				"name": "Azoth",
+				"price": "5400",
+				"stats": {
+					"strength": 7,
+					"dexterity": 5,
+					"defense": 6,
+					"speed": 4
+				},
+				"weapons": [
+					"axe",
+					"bow"
+				],
 				"pic": "http://wiki.brawlhalla.com/images/thumb/0/06/Azoth_Avatar.png/100px-Azoth_Avatar.png"
 			},
 			"koji": {
 				"name": "Koji",
+				"price": "5400",
+				"stats": {
+					"strength": 5,
+					"dexterity": 8,
+					"defense": 4,
+					"speed": 5
+				},
+				"weapons": [
+					"sword",
+					"bow"
+				],
 				"pic": "http://wiki.brawlhalla.com/images/thumb/0/06/Koji_Portrait.png/100px-Koji_Portrait.png"
 			},
 			"ulgrim": {
 				"name": "Ulgrim",
+				"price": "5400",
+				"stats": {
+					"strength": 6,
+					"dexterity": 3,
+					"defense": 7,
+					"speed": 6
+				},
+				"weapons": [
+					"axe",
+					"rocket_lance"
+				],
 				"pic": "http://wiki.brawlhalla.com/images/thumb/4/48/Ulgrim_Avatar.png/100px-Ulgrim_Avatar.png"
 			},
 			"diana": {
 				"name": "Diana",
+				"price": "5400",
+				"stats": {
+					"strength": 5,
+					"dexterity": 6,
+					"defense": 5,
+					"speed": 6
+				},
+				"weapons": [
+					"bow",
+					"blasters"
+				],
 				"pic": "http://wiki.brawlhalla.com/images/thumb/b/b6/Diana_Avatar.png/100px-Diana_Avatar.png"
 			},
 			"jhala": {
 				"name": "Jhala",
+				"price": "5400",
+				"stats": {
+					"strength": 7,
+					"dexterity": 7,
+					"defense": 3,
+					"speed": 5
+				},
+				"weapons": [
+					"axe",
+					"sword"
+				],
 				"pic": "http://wiki.brawlhalla.com/images/thumb/6/67/Jhala_Avatar.png/100px-Jhala_Avatar.png"
 			},
 			"kor": {
 				"name": "Kor",
+				"price": "5400",
+				"stats": {
+					"strength": 6,
+					"dexterity": 5,
+					"defense": 7,
+					"speed": 4
+				},
+				"weapons": [
+					"gaunts",
+					"hammer"
+				],
 				"pic": "http://wiki.brawlhalla.com/images/thumb/c/ce/KorAvatarHigh.png/100px-KorAvatarHigh.png"
 			},
 			"wushang": {
 				"name": "Wu Shang",
+				"price": "5400",
+				"stats": {
+					"strength": 5,
+					"dexterity": 7,
+					"defense": 5,
+					"speed": 5
+				},
+				"weapons": [
+					"gaunts",
+					"spear"
+				],
 				"pic": "http://wiki.brawlhalla.com/images/thumb/c/ca/WuShangAvatar.png/100px-WuShangAvatar.png"
 			},
 			"val": {
 				"name": "Val",
+				"price": "5400",
+				"stats": {
+					"strength": 4,
+					"dexterity": 5,
+					"defense": 6,
+					"speed": 7
+				},
+				"weapons": [
+					"sword",
+					"gaunts"
+				],
 				"pic": "http://wiki.brawlhalla.com/images/thumb/1/1e/ValAvatar3.png/100px-ValAvatar3.png"
 			},
 			"ragnir": {
 				"name": "Ragnir",
+				"price": "5400",
+				"stats": {
+					"strength": 5,
+					"dexterity": 6,
+					"defense": 6,
+					"speed": 5
+				},
+				"weapons": [
+					"katars",
+					"axe"
+				],
 				"pic": "http://wiki.brawlhalla.com/images/thumb/f/f5/RagnirAvatar2.png/100px-RagnirAvatar2.png"
 			},
 			"cross": {
 				"name": "Cross",
+				"price": "5400",
+				"stats": {
+					"strength": 7,
+					"dexterity": 4,
+					"defense": 6,
+					"speed": 5
+				},
+				"weapons": [
+					"blasters",
+					"gaunts"
+				],
 				"pic": "http://wiki.brawlhalla.com/images/thumb/2/22/CrossAvatar2.png/100px-CrossAvatar2.png"
 			},
 			"mirage": {
 				"name": "Mirage",
+				"price": "5400",
+				"stats": {
+					"strength": 7,
+					"dexterity": 6,
+					"defense": 4,
+					"speed": 5
+				},
+				"weapons": [
+					"scythe",
+					"spear"
+				],
 				"pic": "http://wiki.brawlhalla.com/images/thumb/a/a0/MirageAvatar.png/100px-MirageAvatar.png"
 			},
 			"nix": {
 				"name": "Nix",
+				"price": "5400",
+				"stats": {
+					"strength": 4,
+					"dexterity": 5,
+					"defense": 7,
+					"speed": 6
+				},
+				"weapons": [
+					"scythe",
+					"blasters"
+				],
 				"pic": "http://wiki.brawlhalla.com/images/thumb/b/b9/NixAvatar5.png/100px-NixAvatar5.png"
+			},
+			"mordex": {
+				"name": "Mordex",
+				"price": "5400 (launched at 7200)",
+				"stats": {
+					"strength": 6,
+					"dexterity": 4,
+					"defense": 5,
+					"speed": 7
+				},
+				"weapons": [
+					"scythe",
+					"gaunts"
+				],
+				"pic": "http://wiki.brawlhalla.com/images/thumb/a/a5/MordexAvatar1.png/100px-MordexAvatar1.png"
 			}
 		}
 	},
 	"weapons_list": [
 		"hammer",
-		"rocketlance",
+		"rocket_lance",
 		"sword",
 		"blasters",
 		"spear",
@@ -331,7 +545,7 @@
 			],
 			"pic": "http://wiki.brawlhalla.com/images/d/de/HammerIcon.png"
 		},
-		"rocketlance": {
+		"rocket_lance": {
 			"name": "Rocket Lance",
 			"combos": [
 			],
