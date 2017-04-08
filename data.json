@@ -531,7 +531,7 @@
 			"name": "Katars",
 			"combos": [
 				{
-					"s": ["down-light", "jump", "gc", "down-light", "jump", "side-air"],
+					"s": ["down-light", "jump", ["gc", "down-light"], "jump", "side-air"],
 					"f": ["bimples"],
 					"d": "expert",
 					"dn": 4

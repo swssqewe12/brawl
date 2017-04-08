@@ -22,10 +22,14 @@
 			<div class="c_syntax">
 				<% for (var j in c.s) { %>
 					<% var s = c.s[j]; %>
-					<span class="c_segment">
-						<span class="c_hover">
-							<%=s%><%for (var condition in combo_hovers) {%><% var hover = combo_hovers[condition]; if (s == condition) { %><span class="c_hover-text"><%=hover%>
-						</span><% } %><%}%></span></span>
+					<% if (s instanceof Array) { %>
+						<span class="c_segment"><% for (var k in s) { var seg = s[k] %><span class="c_hover"><%=seg%><%if(k<s.length-1){%>:<%}%><% for (var condit in combo_hovers) { var hover = combo_hovers[condit]; %><% if (seg == condit) { %><span class="c_hover-text"><%=hover%></span><% } %><% } %></span><% } %></span>
+					<% } else { %>
+						<span class="c_segment">
+							<span class="c_hover">
+								<%=s%><%for (var condition in combo_hovers) {%><% var hover = combo_hovers[condition]; if (s == condition) { %><span class="c_hover-text"><%=hover%>
+							</span><% } %><%}%></span></span>
+					<% } %>
 				<% } %>
 			</div><br>
 			difficulty: <%= c.d %><br><br>
