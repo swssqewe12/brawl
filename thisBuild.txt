@@ -1,1 +1,2 @@
-Merge gravity cancels with moves
+Added combos
+Added data for combo segment infos

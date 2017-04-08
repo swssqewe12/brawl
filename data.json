@@ -519,9 +519,24 @@
 			"name": "Sword",
 			"combos": [
 				{
-					"s": ["down-light", "recovery"],
-					"f": ["damage"],
-					"d": "easy",
+					"s": ["Dlight", "Sair"],
+					"f": ["plep"],
+					"d": "Easy",
+					"dn": 0
+				},
+				{
+					"s": ["Dlight", "Dair"],
+					"d": "Easy",
+					"dn": 0
+				},
+				{
+					"s": ["Dlight", "Rec"],
+					"d": "Easy",
+					"dn": 0
+				},
+				{
+					"s": ["Dlight", "GP"],
+					"d": "Easy",
 					"dn": 0
 				}
 			],
@@ -619,10 +634,67 @@
 		}
 	},
 	"combo_segment_hovers": {
-		"gc": "Gravity Cancel"
+		"Dlight": "Down Light",
+		"Slight": "Side Light",
+		"Nlight": "Neutral Light",
+		"Dair": "Down Air",
+		"Sair": "Side Air",
+		"Nair": "Neutral Air",
+		"Rec": "Recovery",
+		"Sig": "Signature",
+		"GP": "Ground Pound",
+		"GC": "Gravity Cancel",
+		"SD": "Spot Dodge"
 	},
 	"combo_segment_infos": {
-		"gc": "MEH!"
+		"Dlight": {
+			"controls": "down + light attack",
+			"use": ["ground","GC"]
+		},
+		"Slight": {
+			"controls": "left/right + light attack",
+			"use": ["ground","GC"]
+		},
+		"Nlight": {
+			"controls": "up + light attack",
+			"use": ["ground","GC"]
+		},
+		"Dair": {
+			"controls": "down + light attack",
+			"use": ["air"]
+		},
+		"Sair": {
+			"controls": "left/right + light attack",
+			"use": ["air"]
+		},
+		"Nair": {
+			"controls": "up + light attack",
+			"use": ["air"]
+		},
+		"Rec": {
+			"description": "Heavy attack mid-air",
+			"controls": "heavy attack",
+			"use": ["air"]
+		},
+		"Sig": {
+			"description": "Heavy attack on ground",
+			"controls": "heavy attack",
+			"use": ["ground", "GC"]
+		},
+		"GP": {
+			"controls": "down + heavy attack",
+			"use": ["air"]
+		},
+		"GC": {
+			"description": "Allows you to use ground moves mid-air",
+			"controls": "spot dodge + move",
+			"use": ["air"]
+		},
+		"SD": {
+			"description": "Freeze mid-air",
+			"controls": "I FORGET!",
+			"use": ["air"]
+		}
 	}
 	
 }
