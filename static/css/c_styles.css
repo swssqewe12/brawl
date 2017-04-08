@@ -7,6 +7,7 @@
 }
 
 .c_segment {
+	margin-left: 5px;
 	padding: 5px;
 	border: 2px solid #666;
 	border-radius: 2px;
@@ -14,4 +15,55 @@
 	font-size: 14px;
 	font-weight: 600;
 	font-family: courier;
+	cursor: default;
+}
+
+.c_hover {
+	position: relative;
+	font-family: inherit;
+}
+
+.c_hover-text {
+	display: inline-block;
+	position: absolute;
+	visibility: hidden;
+	white-space: nowrap;
+	top: -35px;
+	left: -2.5px;
+	padding: 5px;
+	border: 2px solid black;
+	border-radius: 2px;
+	background: #111;
+	color: white;
+	font-family: inherit;
+	font-size: 14px;
+	opacity: 0;
+	transition: opacity 0.4s, visibility 0s 0.4s, top 0.4s;
+}
+
+.c_hover:hover .c_hover-text {
+	visibility: visible;
+	opacity: 1;
+	top: -50px;
+	transition: opacity 0.3s, top 0.3s;
+}
+
+.c_hover-text::after {
+	content: '';
+	position: absolute;
+	top: 26px;
+	left: 8px;
+	border-left: 9px solid transparent;
+	border-right: 9px solid transparent;
+	border-top: 9px solid #111;
+}
+
+.c_hover-text::before {
+	content: '';
+	position: absolute;
+	top: 26px;
+	left: 6px;
+	border-left: 11px solid transparent;
+	border-right: 11px solid transparent;
+	border-top: 11px solid black;
 }

@@ -22,7 +22,14 @@
 			<div class="c_syntax">
 				<% for (var j in c.s) { %>
 					<% var s = c.s[j]; %>
-					<span class="c_segment"><%=s%></span>
+					<span class="c_segment">
+						<span class="c_hover">
+							<%=s%>
+							<% if (s == "gc") { %>
+								<span class="c_hover-text">Gravity Cancel</span>
+							<% } %>
+						</span>
+					</span>
 				<% } %>
 			</div><br>
 			difficulty: <%= c.d %><br><br>
