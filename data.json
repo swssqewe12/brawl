@@ -617,6 +617,12 @@
 			"pic": "http://wiki.brawlhalla.com/images/thumb/6/6a/Speed_Icon.png/15px-Speed_Icon.png",
 			"color": "purple"
 		}
+	},
+	"combo_segment_hovers": {
+		"gc": "Gravity Cancel"
+	},
+	"combo_segment_infos": {
+		"gc": "MEH!"
 	}
 	
 }

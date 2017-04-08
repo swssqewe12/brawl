@@ -1,0 +1,4 @@
+Remove white space from right
+Add combo segment hovers to data.json
+[X] Merge gravity cancels with moves
+so first we want to tackle the white space problem.

@@ -31,7 +31,7 @@ app.get('/w/:w', function(req, res) {
 
 app.get('/c/:w', function(req, res) {
 	var w = req.params.w;
-	var dat = {'weapon': w, 'combos': data.weapons[w].combos};
+	var dat = {'weapon': w, 'combos': data.weapons[w].combos, 'combo_segment_hovers': data.combo_hovers};
 	res.render("combow", dat);
 })
 

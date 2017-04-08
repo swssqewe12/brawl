@@ -19,6 +19,7 @@
 }
 
 .c_hover {
+	white-space-collapsing:discard;
 	position: relative;
 	font-family: inherit;
 }
@@ -29,7 +30,7 @@
 	visibility: hidden;
 	white-space: nowrap;
 	top: -35px;
-	left: -2.5px;
+	left: -7.5px;
 	padding: 5px;
 	border: 2px solid black;
 	border-radius: 2px;

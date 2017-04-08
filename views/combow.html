@@ -24,12 +24,8 @@
 					<% var s = c.s[j]; %>
 					<span class="c_segment">
 						<span class="c_hover">
-							<%=s%>
-							<% if (s == "gc") { %>
-								<span class="c_hover-text">Gravity Cancel</span>
-							<% } %>
-						</span>
-					</span>
+							<%=s%><%for (var condition in combo_hovers) {%><% var hover = combo_hovers[condition]; if (s == condition) { %><span class="c_hover-text"><%=hover%>
+						</span><% } %><%}%></span></span>
 				<% } %>
 			</div><br>
 			difficulty: <%= c.d %><br><br>
