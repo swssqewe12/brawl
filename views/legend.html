@@ -34,16 +34,18 @@
 					<a class="btn-white" href="/c/<%=w%>" style="margin-left: 10px;">VIEW COMBOS</a>
 				</div></a>
 			<% } %><br>
-			<span class="i_h">Stats</span>
-			<% for (var k in data.stats) { %>
-				<% var stat = all_stats[k]; %>
-				<% var v = data.stats[k]; %>
-				<div class="i_stat">
-					<img src="<%=stat.pic%>">
-					<span class="text color_<%=stat.color%>"><%=stat.name%></span>
-					<span class="i_stat_value color_dark_<%=stat.color%>"><%=v%></span>
-				</div>
-			<% } %>
+			<div class="i_stats">
+				<span class="i_h">Stats</span>
+				<% for (var k in data.stats) { %>
+					<% var stat = all_stats[k]; %>
+					<% var v = data.stats[k]; %>
+					<div class="i_stat">
+						<img src="<%=stat.pic%>">
+						<span class="text color_<%=stat.color%>"><%=stat.name%></span>
+						<span class="i_stat_value color_dark_<%=stat.color%>"><%=v%></span>
+					</div>
+				<% } %>
+			</div>
 		</div>
 	</div>
 	<div id="footer">© brawl-db 2017+</div>

@@ -517,27 +517,37 @@
 	"weapons": {
 		"sword": {
 			"name": "Sword",
+			"moves": [
+			],
 			"combos": [
 				{
 					"s": ["Dlight", "Sair"],
 					"f": ["plep"],
 					"d": "Easy",
-					"dn": 0
+					"dn": 0,
+					"damage-min": 0,
+					"damage-max": 300
 				},
 				{
 					"s": ["Dlight", "Dair"],
 					"d": "Easy",
-					"dn": 0
+					"dn": 0,
+					"damage-min": 0,
+					"damage-max": 150
 				},
 				{
-					"s": ["Dlight", "Rec"],
+					"s": ["Dlight", "Forward <", "Rec"],
 					"d": "Easy",
-					"dn": 0
+					"dn": 0,
+					"damage-min": 0,
+					"damage-max": 180
 				},
 				{
-					"s": ["Dlight", "GP"],
+					"s": ["Dlight", "Forward >", "GP"],
 					"d": "Easy",
-					"dn": 0
+					"dn": 0,
+					"damage-min": 0,
+					"damage-max": 50
 				}
 			],
 			"pic": "http://wiki.brawlhalla.com/images/9/95/SwordIcon.png"

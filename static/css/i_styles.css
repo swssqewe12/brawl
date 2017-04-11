@@ -99,8 +99,14 @@
 	background-color: #111;
 }
 
-.i_stat:nth-of-type(1) {
-	border-radius: 5px;
+.i_stats .i_stat:nth-child(2) {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.i_stats .i_stat:nth-child(5) {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 }
 
 .i_stat img {
