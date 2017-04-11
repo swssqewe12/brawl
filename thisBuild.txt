@@ -1,1 +1,2 @@
-name is now uppercase
+name uppercase weapons
+more data

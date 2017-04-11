@@ -521,7 +521,7 @@
 			],
 			"combos": [
 				{
-					"s": ["Dlight", "Sair"],
+					"s": ["DLight", "SAir"],
 					"f": ["plep"],
 					"d": "Easy",
 					"dn": 0,
@@ -529,21 +529,21 @@
 					"damage-max": 300
 				},
 				{
-					"s": ["Dlight", "Dair"],
+					"s": ["DLight", "DAir"],
 					"d": "Easy",
 					"dn": 0,
 					"damage-min": 0,
 					"damage-max": 150
 				},
 				{
-					"s": ["Dlight", "Forward <", "Rec"],
+					"s": ["DLight", "Forward <", "Rec"],
 					"d": "Easy",
 					"dn": 0,
 					"damage-min": 0,
 					"damage-max": 180
 				},
 				{
-					"s": ["Dlight", "Forward >", "GP"],
+					"s": ["DLight", "Forward >", "GP"],
 					"d": "Easy",
 					"dn": 0,
 					"damage-min": 0,
@@ -555,12 +555,6 @@
 		"katars": {
 			"name": "Katars",
 			"combos": [
-				{
-					"s": ["down-light", "jump", ["gc", "down-light"], "jump", "side-air"],
-					"f": ["bimples"],
-					"d": "expert",
-					"dn": 4
-				}
 			],
 			"pic": "http://wiki.brawlhalla.com/images/3/3c/KatarsIcon.png"
 		},
@@ -644,65 +638,88 @@
 		}
 	},
 	"combo_segment_hovers": {
-		"Dlight": "Down Light",
-		"Slight": "Side Light",
-		"Nlight": "Neutral Light",
-		"Dair": "Down Air",
-		"Sair": "Side Air",
-		"Nair": "Neutral Air",
+		"DLight": "Down Light",
+		"SLight": "Side Light",
+		"NLight": "Neutral Light",
+		"DAir": "Down Air",
+		"SAir": "Side Air",
+		"NAir": "Neutral Air",
 		"Rec": "Recovery",
-		"Sig": "Signature",
+		"NSig": "Neutral Signature",
+		"SSig": "Side Signature",
+		"DSig": "Down Signature",
 		"GP": "Ground Pound",
 		"GC": "Gravity Cancel",
-		"SD": "Spot Dodge"
+		"SD": "Spot Dodge",
+		"FF": "Fast Fall",
+		"UDodge": "Upwards Dodge",
+		"FDodge": "Forward Dodge",
+		"BDodge": "Backwards Dodge / Dodge Away",
+		"DDodge": "Down Dodge",
+		"NDodge": "Neutral Dodge",
+		"MDodge": "Chase Dodge / Momentum Dodge",
+		"CDodge": "Chain Dodge"
 	},
 	"combo_segment_infos": {
-		"Dlight": {
+		"DLight": {
 			"controls": "down + light attack",
 			"use": ["ground","GC"]
 		},
-		"Slight": {
+		"SLight": {
 			"controls": "left/right + light attack",
 			"use": ["ground","GC"]
 		},
-		"Nlight": {
+		"NLight": {
 			"controls": "up + light attack",
 			"use": ["ground","GC"]
 		},
-		"Dair": {
+		"DAir": {
 			"controls": "down + light attack",
 			"use": ["air"]
 		},
-		"Sair": {
+		"SAir": {
 			"controls": "left/right + light attack",
 			"use": ["air"]
 		},
-		"Nair": {
+		"NAir": {
 			"controls": "up + light attack",
 			"use": ["air"]
 		},
 		"Rec": {
-			"description": "Heavy attack mid-air",
+			"details": "Neutral / Side Air Heavy",
 			"controls": "heavy attack",
 			"use": ["air"]
 		},
-		"Sig": {
-			"description": "Heavy attack on ground",
+		"NSig": {
+			"details": "Neutral Heavy",
 			"controls": "heavy attack",
 			"use": ["ground", "GC"]
 		},
+		"SSig": {
+			"details": "Side Heavy",
+			"controls": "",
+			"use": ["ground", "GC"]
+		},
+		"DSig": {
+			"details": "Down Heavy",
+			"controls": "",
+			"use": ["ground", "GC"]
+		},
 		"GP": {
+			"details": "Down Air Heavy",
 			"controls": "down + heavy attack",
 			"use": ["air"]
 		},
 		"GC": {
-			"description": "Allows you to use ground moves mid-air",
+			"description": "Allows you to perform ground moves in the air",
+			"details": "Neutral Air Dodge",
 			"controls": "spot dodge + move",
 			"use": ["air"]
 		},
 		"SD": {
 			"description": "Freeze mid-air",
-			"controls": "I FORGET!",
+			"details": "Neutral Air Dodge",
+			"controls": "dodge",
 			"use": ["air"]
 		}
 	}
