@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title><%=weapon%> - Combos - brawl-db</title>
+	<title><%=weapons[weapon].name%> - Combos - brawl-db</title>
 	<link rel="stylesheet" type="text/css" href="/css/common.css">
 	<link rel="stylesheet" type="text/css" href="/css/styles.css">
 	<link rel="stylesheet" type="text/css" href="/css/c_styles.css">
@@ -14,7 +14,7 @@
 			<a href="/s"><div class="button">Stats</div></a>
 		</div>
 	</div>
-	<h2> <%=weapon%> </h2>
+	<h2> <%=weapons[weapon].name%> </h2>
 	<p><b> Combos... </b></p>
 	<% for (var i in combos) { %>
 		<div class="c_combo">

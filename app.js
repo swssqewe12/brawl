@@ -25,13 +25,13 @@ app.get('/w', function(req, res) {
 
 app.get('/w/:w', function(req, res) {
 	var w = req.params.w;
-	var dat = {'weapon': w};
+	var dat = {'weapon': w, 'weapons': data.weapons};
 	res.render("weapon", dat);
 })
 
 app.get('/c/:w', function(req, res) {
 	var w = req.params.w;
-	var dat = {'weapon': w, 'combos': data.weapons[w].combos, 'combo_hovers': data.combo_segment_hovers};
+	var dat = {'weapon': w, 'weapons': data.weapons, 'combos': data.weapons[w].combos, 'combo_hovers': data.combo_segment_hovers};
 	res.render("combow", dat);
 })
 
