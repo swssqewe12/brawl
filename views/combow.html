@@ -15,7 +15,7 @@
 		</div>
 	</div>
 	<h2> <%=weapons[weapon].name%> </h2>
-	<p><b> Combos... </b></p>
+	<p><b> Combos... </b></p><br>
 	<% for (var i in combos) { %>
 		<div class="c_combo">
 			<% var c = combos[i] %>
@@ -32,8 +32,7 @@
 							</span><% } %><%}%></span></span>
 					<% } %>
 				<% } %>
-			</div><br>
-			difficulty: <%= c.d %><br><br>
+			</div>
 		</div>
 	<% } %>
 </body>

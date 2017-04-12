@@ -1,13 +1,23 @@
 .c_combo {
+	position: relative;
+	height: 37px;
 	margin: 20px;
 }
 
-.c_syntax {
+.c_combo img {
+	position: absolute;
+	top: 4px;
+	left: 4px;
+}
 
+.c_syntax {
+	position: absolute;
+	top: 0px;
+	left: 52px;
 }
 
 .c_segment {
-	margin-left: 5px;
+	margin-right: 5px;
 	padding: 5px;
 	border: 2px solid #666;
 	border-radius: 2px;
