@@ -1,31 +1,55 @@
+.c_combos {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: white;
+}
+
 .c_combo {
 	position: relative;
-	height: 37px;
+	height: 33px;
 	margin: 20px;
 }
 
 .c_combo img {
 	position: absolute;
-	top: 4px;
-	left: 4px;
+	top: 6px;
+	left: 6px;
 }
 
 .c_syntax {
 	position: absolute;
-	top: 0px;
+	top: 7px;
 	left: 52px;
+	height: 33px;
 }
 
 .c_segment {
 	margin-right: 5px;
-	padding: 5px;
-	border: 2px solid #666;
-	border-radius: 2px;
-	background-color: white;
-	font-size: 14px;
-	font-weight: 600;
-	font-family: "Open Sans";
-	cursor: default;
+	padding: 6px 12px;
+	color: white;
+	background-color: #888;
+	border-radius: 30px;
+	cursor: pointer;
+}
+
+.c_segment.air {
+	background-color: #4a9dc1;
+}
+
+.c_segment.blue {
+	background-color: #1e85b2;
+}
+
+.c_segment.darkblue {
+	background-color: #0c3547;
+}
+
+.c_segment.orange {
+	background-color: #E59400;
+}
+
+.c_segment.red {
+	background-color: #B31E1E;
 }
 
 .c_hover {

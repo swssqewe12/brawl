@@ -1042,8 +1042,23 @@
 		"DDodge": "Down Dodge",
 		"NDodge": "Neutral Dodge",
 		"MDodge": "Chase Dodge / Momentum Dodge",
-		"ChDodge": "Chain Dodge"
+		"ChDodge": "Chain Dodge",
+		"xpivot": "X Pivot",
+		"Grounded": "In air but close to ground (I think)"
 	},
+	"combo_segment_colors": [
+		{"Reverse": "darkblue"},
+		{"xpivot": "darkblue"},
+		{"GC": "orange"},
+		{"air": "lightblue"},
+		{"Light": "blue"},
+		{"FF": "lightblue"},
+		{"Sig": "red"},
+		{"Rec": "red"},
+		{"GP": "red"},
+		{"Dodge": "gray"},
+		{"SD": "gray"}
+	],
 	"combo_segment_infos": {
 		"DLight": {
 			"controls": "down + light attack",
