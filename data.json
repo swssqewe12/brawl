@@ -608,7 +608,7 @@
 				},
 				{
 					"name": "Russian Mafia A",
-					"s": ["DLight", ["ChD","Rec"], "Dair"],
+					"s": ["DLight", ["MDodge","Rec"], "Dair"],
 					"d": "Expert",
 					"dn": 3,
 					"damage-min": 120,
@@ -616,7 +616,7 @@
 				},
 				{
 					"name": "Russian Mafia B",
-					"s": ["DLight", ["ChD","Rec"], "Sair"],
+					"s": ["DLight", ["MDodge","Rec"], "Sair"],
 					"d": "Expert",
 					"dn": 3,
 					"damage-min": 150,
@@ -624,7 +624,7 @@
 				},
 				{
 					"name": "Russian Mafia C",
-					"s": ["DLight", ["ChD","Rec"], "Sair"],
+					"s": ["DLight", ["MDodge","Rec"], "Sair"],
 					"d": "Expert",
 					"dn": 3,
 					"damage-min": 160,
@@ -699,7 +699,7 @@
 					"damage-max": 150
 				},
 				{
-					"s": ["DLight", ["Jump","Chd","Rec"]],
+					"s": ["DLight", ["Jump","MDodge","Rec"]],
 					"d": "",
 					"dn": 0,
 					"damage-min": 0,
@@ -707,7 +707,7 @@
 					"ranged": "very-close"
 				},
 				{
-					"s": ["DLight", ["Diagonal","ChD","Dair"]],
+					"s": ["DLight", ["Diagonal","MDodge","Dair"]],
 					"d": "",
 					"dn": 0,
 					"damage-min": 0,
@@ -762,10 +762,87 @@
 			"combos": [
 				{
 					"s": ["SLight", "DLight"],
-					"d": "",
+					"d": "Easy",
 					"dn": 0,
 					"damage-min": 0,
 					"damage-max": 700
+				},
+				{
+					"s": ["NLight", "Nair"],
+					"d": "Medium",
+					"dn": 1,
+					"damage-min": -1,
+					"damage-max": -1
+				},
+				{
+					"s": ["Dair", "Sair"],
+					"d": "",
+					"dn": 0,
+					"damage-min": -1,
+					"damage-max": -1
+				},
+				{
+					"s": ["SLight", "Jump", "MDodge", "Sair"],
+					"d": "Expert",
+					"dn": 3,
+					"damage-min": -1,
+					"damage-max": -1
+				},
+				{
+					"s": ["SLight", "MDodge", "NLight", "Jump", ["Reverse","Nair"]],
+					"d": "Medium",
+					"dn": 1,
+					"damage-min": -1,
+					"damage-max": -1
+				},
+				{
+					"s": ["SLight", "Jump", "MDodge", "Nair"],
+					"d": "",
+					"dn": 0,
+					"damage-min": -1,
+					"damage-max": -1
+				},
+				{
+					"s": ["SLight", "Jump", "Dair"],
+					"d": "",
+					"dn": 0,
+					"damage-min": -1,
+					"damage-max": -1
+				},
+				{
+					"s": ["SLight", "MDodge", "Nair"],
+					"d": "",
+					"dn": 0,
+					"damage-min": -1,
+					"damage-max": -1
+				},
+				{
+					"s": ["Dair", "Nair"],
+					"d": "",
+					"dn": 0,
+					"damage-min": -1,
+					"damage-max": -1
+				},
+				{
+					"s": ["Dair", "NLight"],
+					"d": "",
+					"dn": 0,
+					"damage-min": -1,
+					"damage-max": -1
+				},
+				{
+					"s": ["DLight", "NLight"],
+					"d": "",
+					"dn": 0,
+					"damage-min": -1,
+					"damage-max": -1
+				},
+				{
+					"s": ["Dair", "SLight", "DLight"],
+					"d": "",
+					"dn": 0,
+					"damage-min": -1,
+					"damage-max": -1
 				}
 			],
 			"pic": "http://wiki.brawlhalla.com/images/2/23/BowIcon.png"
@@ -788,21 +865,21 @@
 					"damage-max": 700
 				},
 				{
-					"s": ["DLight", ["ChD","Rec"]],
+					"s": ["DLight", ["MDodge","Rec"]],
 					"d": "",
 					"dn": 0,
 					"damage-min": 0,
 					"damage-max": 700
 				},
 				{
-					"s": ["DLight", ["ChD","Nair"]],
+					"s": ["DLight", ["MDodge","Nair"]],
 					"d": "",
 					"dn": 0,
 					"damage-min": 0,
 					"damage-max": 700
 				},
 				{
-					"s": ["DLight", ["ChD","Dair"]],
+					"s": ["DLight", ["MDodge","Dair"]],
 					"d": "",
 					"dn": 0,
 					"damage-min": 0,
@@ -964,8 +1041,8 @@
 		"BDodge": "Backwards Dodge / Dodge Away",
 		"DDodge": "Down Dodge",
 		"NDodge": "Neutral Dodge",
-		"ChD": "Chase Dodge / Momentum Dodge",
-		"CDodge": "Chain Dodge"
+		"MDodge": "Chase Dodge / Momentum Dodge",
+		"ChDodge": "Chain Dodge"
 	},
 	"combo_segment_infos": {
 		"DLight": {
