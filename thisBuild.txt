@@ -1,2 +1,4 @@
-name uppercase weapons
-more data
+1.adding a lot of combos data weapons +
+                           2. exclusives
+
+3... Exclusive combos for legends highlights the weapons tab fixed (wrong one -> should be legends)

@@ -62,7 +62,6 @@
 					"blasters",
 					"hammer"
 				],
-				"pic": "http://i.imgur.com/creFKtf.png",
 				"pic": "http://wiki.brawlhalla.com/images/thumb/f/f5/Cassidy_Avatar.png/100px-Cassidy_Avatar.png"
 			},
 			"orion": {
@@ -517,35 +516,33 @@
 	"weapons": {
 		"sword": {
 			"name": "Sword",
-			"moves": [
-			],
 			"combos": [
 				{
-					"s": ["DLight", "SAir"],
+					"s": ["DLight", "Sair"],
 					"f": ["plep"],
 					"d": "Easy",
 					"dn": 0,
 					"damage-min": 0,
-					"damage-max": 300
+					"damage-max": 700
 				},
 				{
-					"s": ["DLight", "DAir"],
+					"s": ["DLight", "Dair"],
 					"d": "Easy",
 					"dn": 0,
 					"damage-min": 0,
-					"damage-max": 150
+					"damage-max": 700
 				},
 				{
 					"s": ["DLight", "Forward <", "Rec"],
 					"d": "Easy",
 					"dn": 0,
 					"damage-min": 0,
-					"damage-max": 180
+					"damage-max": 700
 				},
 				{
 					"s": ["DLight", "Forward >", "GP"],
-					"d": "Easy",
-					"dn": 0,
+					"d": "Medium",
+					"dn": 1,
 					"damage-min": 0,
 					"damage-max": 50
 				}
@@ -555,63 +552,373 @@
 		"katars": {
 			"name": "Katars",
 			"combos": [
+				{
+					"s": ["SLight", "DLight"],
+					"d": "",
+					"dn": 0,
+					"damage-min": 0,
+					"damage-max": 60
+				}
 			],
 			"pic": "http://wiki.brawlhalla.com/images/3/3c/KatarsIcon.png"
 		},
 		"hammer": {
 			"name": "Hammer",
 			"combos": [
+				{
+					"s": ["DLight", "Sair"],
+					"d": "",
+					"dn": 0,
+					"damage-min": 10,
+					"damage-max": 700
+				},
+				{
+					"s": ["DLight", "SLight"],
+					"d": "",
+					"dn": 0,
+					"damage-min": 0,
+					"damage-max": 90
+				},
+				{
+					"s": ["DLight", "NLight"],
+					"d": "",
+					"dn": 0,
+					"damage-min": 0,
+					"damage-max": 30
+				},
+				{
+					"s": ["DLight", "Dair"],
+					"d": "",
+					"dn": 0,
+					"damage-min": -1,
+					"damage-max": -1
+				},
+				{
+					"s": ["Sair", "NLight"],
+					"d": "",
+					"dn": 0,
+					"damage-min": 0,
+					"damage-max": 0,
+					"requires": {
+						"dex": {
+							"min": "7",
+							"max": "-1"
+						}
+					}
+				},
+				{
+					"name": "Russian Mafia A",
+					"s": ["DLight", ["ChD","Rec"], "Dair"],
+					"d": "Expert",
+					"dn": 3,
+					"damage-min": 120,
+					"damage-max": 140
+				},
+				{
+					"name": "Russian Mafia B",
+					"s": ["DLight", ["ChD","Rec"], "Sair"],
+					"d": "Expert",
+					"dn": 3,
+					"damage-min": 150,
+					"damage-max": 150
+				},
+				{
+					"name": "Russian Mafia C",
+					"s": ["DLight", ["ChD","Rec"], "Sair"],
+					"d": "Expert",
+					"dn": 3,
+					"damage-min": 160,
+					"damage-max": 170
+				}
 			],
 			"pic": "http://wiki.brawlhalla.com/images/d/de/HammerIcon.png"
 		},
 		"rocket_lance": {
 			"name": "Rocket Lance",
 			"combos": [
+				{
+					"s": ["SLight", "Sair"],
+					"d": "",
+					"dn": 0,
+					"damage-min": 0,
+					"damage-max": 700
+				},
+				{
+					"s": ["SLight", "Dair"],
+					"d": "",
+					"dn": 0,
+					"damage-min": 0,
+					"damage-max": 700
+				},
+				{
+					"s": ["SLight", "Nair"],
+					"d": "",
+					"dn": 0,
+					"damage-min": 0,
+					"damage-max": 700
+				},
+				{
+					"s": ["SLight", "Rec"],
+					"d": "",
+					"dn": 0,
+					"damage-min": 0,
+					"damage-max": 700
+				}
 			],
 			"pic": "http://wiki.brawlhalla.com/images/2/2a/LanceIcon.png"
 		},
 		"blasters": {
 			"name": "Blasters",
 			"combos": [
+				{
+					"s": ["DLight", "Sair"],
+					"d": "",
+					"dn": 0,
+					"damage-min": -1,
+					"damage-max": -1
+				},
+				{
+					"s": ["Dair", ["GC","NLight"]],
+					"d": "",
+					"dn": 0,
+					"damage-min": 0,
+					"damage-max": 80
+				},
+				{
+					"s": ["Sair", "NLight"],
+					"d": "",
+					"dn": 0,
+					"damage-min": 0,
+					"damage-max": 90
+				},
+				{
+					"s": ["DLight", ["Jump","xpivot","Nair"]],
+					"d": "",
+					"dn": 0,
+					"damage-min": 0,
+					"damage-max": 150
+				},
+				{
+					"s": ["DLight", ["Jump","Chd","Rec"]],
+					"d": "",
+					"dn": 0,
+					"damage-min": 0,
+					"damage-max": 100,
+					"ranged": "very-close"
+				},
+				{
+					"s": ["DLight", ["Diagonal","ChD","Dair"]],
+					"d": "",
+					"dn": 0,
+					"damage-min": 0,
+					"damage-max": 0,
+					"ranged": "close"
+				}
 			],
 			"pic": "http://wiki.brawlhalla.com/images/a/a0/BlastersIcon.png"
 		},
 		"spear": {
 			"name": "Spear",
 			"combos": [
+				{
+					"s": ["DLight", "Sair"],
+					"d": "",
+					"dn": 0,
+					"damage-min": 0,
+					"damage-max": 300
+				},
+				{
+					"s": ["DLight", "Nair"],
+					"d": "",
+					"dn": 0,
+					"damage-min": 0,
+					"damage-max": 150
+				},
+				{
+					"s": ["DLight", "Rec"],
+					"d": "",
+					"dn": 0,
+					"damage-min": 170,
+					"damage-max": 300
+				}
 			],
 			"pic": "http://wiki.brawlhalla.com/images/a/a5/SpearIcon.png"
 		},
 		"axe": {
 			"name": "Axe",
 			"combos": [
+				{
+					"s": ["SLight", "DLight"],
+					"d": "",
+					"dn": 0,
+					"damage-min": 0,
+					"damage-max": 110
+				}
 			],
 			"pic": "http://wiki.brawlhalla.com/images/5/5d/AxeIcon.png"
 		},
 		"bow": {
 			"name": "Bow",
 			"combos": [
+				{
+					"s": ["SLight", "DLight"],
+					"d": "",
+					"dn": 0,
+					"damage-min": 0,
+					"damage-max": 700
+				}
 			],
 			"pic": "http://wiki.brawlhalla.com/images/2/23/BowIcon.png"
 		},
 		"gaunts": {
 			"name": "Gauntlets",
 			"combos": [
+				{
+					"s": ["DLight", "SLight"],
+					"d": "",
+					"dn": 0,
+					"damage-min": 0,
+					"damage-max": 700
+				},
+				{
+					"s": ["DLight", "Sair"],
+					"d": "",
+					"dn": 0,
+					"damage-min": 60,
+					"damage-max": 700
+				},
+				{
+					"s": ["DLight", ["ChD","Rec"]],
+					"d": "",
+					"dn": 0,
+					"damage-min": 0,
+					"damage-max": 700
+				},
+				{
+					"s": ["DLight", ["ChD","Nair"]],
+					"d": "",
+					"dn": 0,
+					"damage-min": 0,
+					"damage-max": 700
+				},
+				{
+					"s": ["DLight", ["ChD","Dair"]],
+					"d": "",
+					"dn": 0,
+					"damage-min": 0,
+					"damage-max": 90
+				},
+				{
+					"s": ["Dair", "NLight"],
+					"d": "",
+					"dn": 0,
+					"damage-min": 0,
+					"damage-max": 0
+				},
+				{
+					"s": ["Nair", "Rec"],
+					"d": "",
+					"dn": 0,
+					"damage-min": 0,
+					"damage-max": 100
+				},
+				{
+					"s": ["Nair", "Dair"],
+					"d": "",
+					"dn": 0,
+					"damage-min": 0,
+					"damage-max": 90,
+					"requires-desc": "momentum at higher damage values, as in you have to move at high speed before using nair"
+				},
+				{
+					"s": ["Nair", "Sair"],
+					"d": "",
+					"dn": 0,
+					"damage-min": 0,
+					"damage-max": 170,
+					"requires-desc": "momentum at higher damages again"
+				},
+				{
+					"s": ["Rec", ["GC","NLight"]],
+					"d": "",
+					"dn": 0,
+					"damage-min": 0,
+					"damage-max": 0
+				}
 			],
 			"pic": "http://wiki.brawlhalla.com/images/d/d8/GauntletsIcon.png"
 		},
 		"scythe": {
 			"name": "Scythe",
 			"combos": [
+				{
+					"s": [["Grounded","Nair"], "SLight"],
+					"d": "Pretty much never happens though",
+					"dn": 0,
+					"damage-min": 0,
+					"damage-max": 90
+				}
 			],
 			"pic": "http://wiki.brawlhalla.com/images/6/64/ScytheIcon.png"
 		}
 	},
 	"exclusive_combos": {
-		"asuri": {
-			"sword": [
-			],
-			"katars": [
+		"cassidy": {
+			"hammer": [
+				{
+					"s": ["DLight", "NSig"],
+					"d": "",
+					"dn": 0,
+					"damage-min": 0,
+					"damage-max": 250
+				},
+				{
+					"s": ["NLight", "NSig"],
+					"d": "",
+					"dn": 0,
+					"damage-min": 0,
+					"damage-max": 10
+				}
+			]
+		},
+		"teros": {
+			"hammer": [
+				{
+					"s": ["DLight", "NSig"],
+					"d": "",
+					"dn": 0,
+					"damage-min": 0,
+					"damage-max": 200
+				},
+				{
+					"s": ["DLight", "DSig"],
+					"d": "",
+					"dn": 0,
+					"damage-min": 0,
+					"damage-max": 100
+				}
+			]
+		},
+		"orion": {
+			"rocket_lance": [
+				{
+					"s": ["SLight", "NSig"],
+					"d": "",
+					"dn": 0,
+					"damage-min": 0,
+					"damage-max": 700
+				}
+			]
+		},
+		"vraxx": {
+			"rocket_lance": [
+				{
+					"s": ["SLight", "NSig"],
+					"d": "",
+					"dn": 0,
+					"damage-min": 0,
+					"damage-max": 700
+				}
 			]
 		}
 	},
@@ -641,9 +948,9 @@
 		"DLight": "Down Light",
 		"SLight": "Side Light",
 		"NLight": "Neutral Light",
-		"DAir": "Down Air",
-		"SAir": "Side Air",
-		"NAir": "Neutral Air",
+		"Dair": "Down Air",
+		"Sair": "Side Air",
+		"Nair": "Neutral Air",
 		"Rec": "Recovery",
 		"NSig": "Neutral Signature",
 		"SSig": "Side Signature",
@@ -657,7 +964,7 @@
 		"BDodge": "Backwards Dodge / Dodge Away",
 		"DDodge": "Down Dodge",
 		"NDodge": "Neutral Dodge",
-		"MDodge": "Chase Dodge / Momentum Dodge",
+		"ChD": "Chase Dodge / Momentum Dodge",
 		"CDodge": "Chain Dodge"
 	},
 	"combo_segment_infos": {
