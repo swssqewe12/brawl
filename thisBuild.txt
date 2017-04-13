@@ -1,1 +1,3 @@
-add new combo gaunts
+getting somewhere...
+
+eventually: changed the way css is done combos and no colons a hile.

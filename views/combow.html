@@ -21,17 +21,24 @@
 				<% var c = combos[i] %>
 				<img src="/img/ComboDifficulty<%=c.d%>.png">
 				<div class="c_syntax">
-					<% for (var j in c.s) { %>
-						<% var s = c.s[j] %>
-						<% if (s instanceof Array) { %>
-							<% var joined = s.join("") %>
-							<span class="c_segment <%= joined.includes("xpivot") ? 'darkblue' : joined.includes("GC") ? 'orange' : joined.includes("air") ? 'air' : joined.includes("Light") ? 'blue' : joined.includes("Sig") || joined.includes("Rec") || joined.includes("GP") ? 'red' : 'orange' %>"><% for (var k in s) { var seg = s[k] %><span class="c_hover"><%=seg%><%if(k<s.length-1){%>:<%}%><% for (var condit in combo_hovers) { var hover = combo_hovers[condit]; %><% if (seg == condit) { %><span class="c_hover-text"><%=hover%></span><% } %><% } %></span><% } %></span>
-						<% } else { %>
-							<span class="c_segment <%= s.includes("air") ? 'air' : s.includes("Light") ? 'blue' : s.includes("Sig") || s.includes("Rec") || s.includes("GP") ? 'red' : 'orange' %>">
-								<span class="c_hover">
-									<%=s%><%for (var condition in combo_hovers) {%><% var hover = combo_hovers[condition]; if (s == condition) { %><span class="c_hover-text"><%=hover%>
-								</span><% } %><%}%></span></span>
-						<% } %>
+					<% var segments = c.s %>
+					<% for (var j in segments) {
+						var segment = segments[j]
+						var pieces = segment instanceof Array ? segment : [segment] %>
+						<div class="c_segment">
+							<% for (var k in pieces) {
+								var p = pieces[k] %>
+								<div class="c_piece">
+									<%=p%>
+									<% var hover_text = combo_segment_hovers[p]; %>
+									<% if (hover_text) { %>
+										<div class="c_hover-text">
+											<%=hover_text%>
+										</div>
+									<% } %>
+								</div>
+							<% } %>
+						</div>
 					<% } %>
 				</div>
 			</div>
