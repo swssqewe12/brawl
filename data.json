@@ -921,6 +921,13 @@
 					"dn": 0,
 					"damage-min": 0,
 					"damage-max": 0
+				},
+				{
+					"s": ["DLight", "NLight"],
+					"d": "Easy",
+					"dn": 0,
+					"damage-min": 0,
+					"damage-max": -1
 				}
 			],
 			"pic": "http://wiki.brawlhalla.com/images/d/d8/GauntletsIcon.png"
