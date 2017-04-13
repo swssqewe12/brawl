@@ -18,16 +18,25 @@
 	<div class="c_combos">
 		<% for (var i in combos) { %>
 			<div class="c_combo">
-				<% var c = combos[i] %>
+				<% var c = combos[i]; %>
 				<img src="/img/ComboDifficulty<%=c.d%>.png">
 				<div class="c_syntax">
-					<% var segments = c.s %>
+					<% var segments = c.s; %>
 					<% for (var j in segments) {
-						var segment = segments[j]
-						var pieces = segment instanceof Array ? segment : [segment] %>
+						var segment = segments[j];
+						var pieces = segment instanceof Array ? segment : [segment]; %>
 						<div class="c_segment">
 							<% for (var k in pieces) {
-								var p = pieces[k] %><div class="c_piece">
+								var p = pieces[k]; %><div class="c_piece
+										<% for (var l in combo_segment_colors) { 
+										    var o = combo_segment_colors[l];
+											var condition = o.if;
+											var color = o.then; %>
+											<% if (p.includes(condition)) { %>
+												<%=color%> 
+											<% break; } %>
+										<% } %>
+									">
 									<%=p%>
 									<% var hover_text = combo_segment_hovers[p]; %>
 									<% if (hover_text) { %>

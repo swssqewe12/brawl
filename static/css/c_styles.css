@@ -33,7 +33,7 @@
 	overflow: hidden;
 }
 
-.c_piece.air {
+.c_piece.lightblue {
 	background-color: #4a9dc1;
 }
 
@@ -47,10 +47,16 @@
 
 .c_piece.orange {
 	background-color: #E59400;
+	/*border-right: 2px solid #724A00;*/
 }
 
 .c_piece.red {
 	background-color: #B31E1E;
+}
+
+.c_piece.gray {
+	background-color: #696969;
+	/*border-right: 2px solid #333;*/
 }
 
 .c_piece {
@@ -61,6 +67,7 @@
 	white-space-collapsing:discard;
 	font-family: inherit;
 	line-height: 33px;
+	border-right: 2px solid white;
 }
 
 .c_piece:first-child {
@@ -69,6 +76,7 @@
 
 .c_piece:last-child {
 	padding-right: 12px;
+	border-right: none;
 }
 
 .c_hover-text {

@@ -1054,17 +1054,18 @@
 		"Grounded": "In air but close to ground (I think)"
 	},
 	"combo_segment_colors": [
-		{"Reverse": "darkblue"},
-		{"xpivot": "darkblue"},
-		{"GC": "orange"},
-		{"air": "lightblue"},
-		{"Light": "blue"},
-		{"FF": "lightblue"},
-		{"Sig": "red"},
-		{"Rec": "red"},
-		{"GP": "red"},
-		{"Dodge": "gray"},
-		{"SD": "gray"}
+		{"if": "Reverse", "then": "darkblue"},
+		{"if": "xpivot", "then": "darkblue"},
+		{"if": "GC", "then": "orange"},
+		{"if": "air", "then": "lightblue"},
+		{"if": "Light", "then": "blue"},
+		{"if": "FF", "then": "lightblue"},
+		{"if": "Sig", "then": "red"},
+		{"if": "Rec", "then": "red"},
+		{"if": "GP", "then": "red"},
+		{"if": "Dodge", "then": "gray"},
+		{"if": "SD", "then": "gray"},
+		{"if": "", "then": "orange"}
 	],
 	"combo_segment_infos": {
 		"DLight": {

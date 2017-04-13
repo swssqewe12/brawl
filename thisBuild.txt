@@ -1,3 +1,1 @@
-now you can atleast see them
-
-in the future changed the way css is done combos and no colons a hile.
+finally! changed the way css is done combos and no colons a hile.
