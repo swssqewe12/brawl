@@ -634,7 +634,7 @@
 			"pic": "http://wiki.brawlhalla.com/images/d/de/HammerIcon.png"
 		},
 		"rocket_lance": {
-			"name": "Rocket Lance",
+			"name": "Lance",
 			"combos": [
 				{
 					"s": ["SLight", "Sair"],
