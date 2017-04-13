@@ -692,14 +692,14 @@
 					"damage-max": 90
 				},
 				{
-					"s": ["DLight", ["Jump","xpivot","Nair"]],
+					"s": ["DLight", ["xpivot","Nair"]],
 					"d": "",
 					"dn": 0,
 					"damage-min": 0,
 					"damage-max": 150
 				},
 				{
-					"s": ["DLight", ["Jump","MDodge","Rec"]],
+					"s": ["DLight", ["MDodge","Rec"]],
 					"d": "",
 					"dn": 0,
 					"damage-min": 0,
@@ -782,28 +782,28 @@
 					"damage-max": -1
 				},
 				{
-					"s": ["SLight", "Jump", "MDodge", "Sair"],
+					"s": ["SLight", "MDodge", "Sair"],
 					"d": "Expert",
 					"dn": 3,
 					"damage-min": -1,
 					"damage-max": -1
 				},
 				{
-					"s": ["SLight", "MDodge", "NLight", "Jump", ["Reverse","Nair"]],
+					"s": ["SLight", "MDodge", "NLight", ["Reverse","Nair"]],
 					"d": "Medium",
 					"dn": 1,
 					"damage-min": -1,
 					"damage-max": -1
 				},
 				{
-					"s": ["SLight", "Jump", "MDodge", "Nair"],
+					"s": ["SLight", "MDodge", "Nair"],
 					"d": "",
 					"dn": 0,
 					"damage-min": -1,
 					"damage-max": -1
 				},
 				{
-					"s": ["SLight", "Jump", "Dair"],
+					"s": ["SLight", "Dair"],
 					"d": "",
 					"dn": 0,
 					"damage-min": -1,
