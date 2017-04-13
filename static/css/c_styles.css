@@ -12,27 +12,28 @@
 
 .c_combo img {
 	position: absolute;
-	top: 6px;
-	left: 6px;
+	top: 4px;
+	left: 4px;
 }
 
 .c_syntax {
 	position: absolute;
-	top: 7px;
+	top: 0px;
 	left: 52px;
 	height: 33px;
 }
 
 .c_segment {
+	display: inline-block;
 	margin-right: 5px;
-	padding: 6px 12px;
 	color: white;
-	background-color: #888;
+	/*background-color: #888;*/
 	border-radius: 30px;
 	cursor: pointer;
+	overflow: hidden;
 }
 
-.c_segment.air {
+/*.c_segment.air {
 	background-color: #4a9dc1;
 }
 
@@ -50,12 +51,15 @@
 
 .c_segment.red {
 	background-color: #B31E1E;
-}
+}*/
 
 .c_hover {
-	white-space-collapsing:discard;
 	position: relative;
+	padding: 6px 12px;
+	background-color: yellow;
+	white-space-collapsing:discard;
 	font-family: inherit;
+	line-height: 33px;
 }
 
 .c_hover-text {
