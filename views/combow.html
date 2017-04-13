@@ -27,8 +27,7 @@
 						var pieces = segment instanceof Array ? segment : [segment] %>
 						<div class="c_segment">
 							<% for (var k in pieces) {
-								var p = pieces[k] %>
-								<div class="c_piece">
+								var p = pieces[k] %><div class="c_piece">
 									<%=p%>
 									<% var hover_text = combo_segment_hovers[p]; %>
 									<% if (hover_text) { %>
@@ -36,8 +35,8 @@
 											<%=hover_text%>
 										</div>
 									<% } %>
-								</div>
-							<% } %>
+								</div
+							><% } %>
 						</div>
 					<% } %>
 				</div>
