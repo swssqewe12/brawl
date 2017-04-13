@@ -533,14 +533,14 @@
 					"damage-max": 700
 				},
 				{
-					"s": ["DLight", "Forward <", "Rec"],
+					"s": ["DLight", "Rec"],
 					"d": "Easy",
 					"dn": 0,
 					"damage-min": 0,
 					"damage-max": 700
 				},
 				{
-					"s": ["DLight", "Forward >", "GP"],
+					"s": ["DLight", "GP"],
 					"d": "Medium",
 					"dn": 1,
 					"damage-min": 0,
@@ -1056,6 +1056,8 @@
 	"combo_segment_colors": [
 		{"if": "Reverse", "then": "darkblue"},
 		{"if": "xpivot", "then": "darkblue"},
+		{"if": "Diagonal", "then": "darkblue"},
+		{"if": "Grounded", "then": "darkblue"},
 		{"if": "GC", "then": "orange"},
 		{"if": "air", "then": "lightblue"},
 		{"if": "Light", "then": "blue"},
@@ -1063,9 +1065,9 @@
 		{"if": "Sig", "then": "red"},
 		{"if": "Rec", "then": "red"},
 		{"if": "GP", "then": "red"},
-		{"if": "Dodge", "then": "gray"},
+		{"if": "Dodge", "then": "orange"},
 		{"if": "SD", "then": "gray"},
-		{"if": "", "then": "orange"}
+		{"if": "", "then": " "}
 	],
 	"combo_segment_infos": {
 		"DLight": {
