@@ -37,7 +37,7 @@ app.get('/c/:w', function(req, res) {
 
 app.get('/c/e/:l', function(req, res) {
 	var l = req.params.l;
-	var dat = {'legend': l, 'weapons': data.exclusive_combos[l]};
+	var dat = {'legend': l, 'data': data.legends.legend[l], 'weapons': data.exclusive_combos[l]};
 	res.render("comboe", dat)
 })
 
