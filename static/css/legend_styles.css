@@ -1,0 +1,58 @@
+body {
+	background-color: white;
+}
+
+.legend_wrapper {
+	width: 100%;
+}
+
+.legend_left {
+	width: 180px;
+	float: left;
+}
+
+.legend_right {
+	width: calc(100% - 260px);
+	padding: 20px;
+	float: left;
+}
+
+.legend_pic {
+	display: inline-block;
+	margin: 20px;
+	width: 100px;
+	background: white;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.legend_pic img {
+	width: 100px;
+	height: 100px;
+}
+
+.legend_pic p {
+	padding: 5px;
+	background-color: #eee;
+	color: #1e85b2;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.legend_sidenav {
+	list-style-type: none;
+}
+
+.legend_sidenav li {
+	margin: 10px;
+	padding-left: 10px;
+	margin-left: 5px;
+	border-left: 4px solid white;
+	color: black;
+}
+
+.legend_sidenav li.selected {
+	color: #1e85b2;
+	border-left: 4px solid #1e85b2;
+	font-weight: 700;
+}

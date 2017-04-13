@@ -3,6 +3,8 @@
 	<title><%=data.name%> - brawl-db</title>
 	<link rel="stylesheet" type="text/css" href="/css/common.css">
 	<link rel="stylesheet" type="text/css" href="/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="/css/c_styles.css">
+	<link rel="stylesheet" type="text/css" href="/css/legend_styles.css">
 </head>
 <body>
 	<div id="header">
@@ -13,16 +15,62 @@
 			<a href="/s"><div class="button">Stats</div></a>
 		</div>
 	</div>
-	<h2> <%=data.name%> Exclusive Combos </h2>
-	<% for (var weapon in weapons) { %>
-		<% var combos = weapons[weapon] %>
-		<u> <%= weapon %> </u><br><br>
-		<% for (var i in combos) { %>
-			<% var c = combos[i] %>
-			<%= c.s %><br>
-			(<%= c.f %>)<br>
-			difficulty: <%= c.d %><br><br>
-		<% } %>
-	<% } %>
+	<div class="legend_wrapper">
+		<div class="legend_left">
+			<div class="legend_pic">
+				<img src="<%=data.pic%>">
+				<p> <%=data.name%> </p>
+			</div>
+			<ul class="legend_sidenav">
+				<a href="/l/<%=legend%>"><li> DETAILS </li></a>
+				<a href="/l/<%=legend%>"><li> COMBOS </li></a>
+				<a href="/c/e/<%=legend%>"><li class="selected"> EXCLUSIVE COMBOS </li></a>
+			</ul>
+		</div>
+		<div class="legend_right">
+			<h2> <%=data.name%> Exclusive Combos </h2>
+			<% for (var weapon in weapons) { %>
+				<% var combos = weapons[weapon] %>
+				<u> <%= weapon %> </u><br><br>
+				<div class="c_combos">
+					<% for (var i in combos) { %>
+						<div class="c_combo">
+							<% var c = combos[i]; %>
+							<img src="/img/ComboDifficulty<%=c.d%>.png">
+							<div class="c_syntax">
+								<% var segments = c.s; %>
+								<% for (var j in segments) {
+									var segment = segments[j];
+									var pieces = segment instanceof Array ? segment : [segment]; %>
+									<div class="c_segment">
+										<% for (var k in pieces) {
+											var p = pieces[k]; %><div class="c_piece
+													<% for (var l in combo_segment_colors) { 
+													    var o = combo_segment_colors[l];
+														var condition = o.if;
+														var color = o.then; %>
+														<% if (p.includes(condition)) { %>
+															<%=color%> 
+														<% break; } %>
+													<% } %>
+												">
+												<%=p%>
+												<% var hover_text = combo_segment_hovers[p]; %>
+												<% if (hover_text) { %>
+													<div class="c_hover-text">
+														<%=hover_text%>
+													</div>
+												<% } %>
+											</div
+										><% } %>
+									</div>
+								<% } %>
+							</div>
+						</div>
+					<% } %>
+				</div>
+			<% } %>
+		</div>
+	</div>
 </body>
 </html>
