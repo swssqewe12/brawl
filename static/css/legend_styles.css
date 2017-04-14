@@ -7,12 +7,12 @@ body {
 }
 
 .legend_left {
-	width: 180px;
+	width: 150px;
 	float: left;
 }
 
 .legend_right {
-	width: calc(100% - 260px);
+	width: calc(100% - 230px);
 	padding: 20px;
 	float: left;
 }
