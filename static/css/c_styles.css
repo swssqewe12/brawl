@@ -97,10 +97,11 @@
 	font-size: 14px;
 	line-height: initial;
 	opacity: 0;
+	cursor: default;
 	transition: opacity 0.4s, visibility 0s 0.4s, top 0.4s;
 }
 
-.c_piece:hover .c_hover-text:not(:hover) {
+.c_piece:hover .c_info-text:not(.active) + .c_hover-text:not(:hover) {
 	overflow: visible;
 	visibility: visible;
 	opacity: 1;
@@ -126,4 +127,53 @@
 	border-left: 11px solid transparent;
 	border-right: 11px solid transparent;
 	border-top: 11px solid black;
+}
+
+.c_info-text {
+	display: inline-block;
+	position: absolute;
+	visibility: hidden;
+	white-space: nowrap;
+	top: 32px;
+	left: 0px;
+	padding: 5px 10px;
+	border: 2px solid black;
+	border-radius: 2px;
+	background: #111;
+	color: white;
+	font-family: inherit;
+	font-size: 14px;
+	line-height: initial;
+	opacity: 0;
+	transition: opacity 0.4s, visibility 0s 0.4s, top 0.4s;
+	z-index: 100;
+	cursor: default;
+}
+
+.c_piece:hover .c_info-text.active {
+	overflow: visible;
+	visibility: visible;
+	opacity: 1;
+	top: 50px;
+	transition: opacity 0.3s, top 0.3s;
+}
+
+.c_info-text::after {
+	content: '';
+	position: absolute;
+	top: -9px;
+	left: 8px;
+	border-left: 9px solid transparent;
+	border-right: 9px solid transparent;
+	border-bottom: 9px solid #111;
+}
+
+.c_info-text::before {
+	content: '';
+	position: absolute;
+	top: -11px;
+	left: 6px;
+	border-left: 11px solid transparent;
+	border-right: 11px solid transparent;
+	border-bottom: 11px solid black;
 }

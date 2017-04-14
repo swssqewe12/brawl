@@ -53,10 +53,15 @@
 															<%=color%> 
 														<% break; } %>
 													<% } %>
-												">
+											" onclick="toggle_info(this);">
 												<%=p%>
 												<% var hover_text = combo_segment_hovers[p]; %>
 												<% if (hover_text) { %>
+													<div class="c_info-text">
+														Neutral Signature<br>
+														C Up + Heavy Attack<br>
+														U Ground, GC
+													</div>
 													<div class="c_hover-text">
 														<%=hover_text%>
 													</div>
@@ -75,5 +80,11 @@
 	<div id="copyright">
 		© brawl-db 2017+ we use cookies if not agree bye
 	</div>
+	<script>
+		function toggle_info(element) {
+			var info = element.querySelector(".c_info-text");
+			info.classList.toggle("active");
+		}
+	</script>
 </body>
 </html>
