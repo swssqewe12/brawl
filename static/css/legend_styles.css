@@ -33,7 +33,7 @@ body {
 .legend_pic p {
 	padding: 5px;
 	background-color: #eee;
-	color: #1e85b2;
+	color: black;
 	text-align: center;
 	font-size: 14px;
 	font-weight: 700;
@@ -45,14 +45,15 @@ body {
 
 .legend_sidenav li {
 	margin: 10px;
-	padding-left: 10px;
-	margin-left: 5px;
+	padding-left: 12px;
+	margin-left: 0px;
 	border-left: 4px solid white;
 	color: black;
+	line-height: 24px;
+	font-size: 15px;
 }
 
 .legend_sidenav li.selected {
 	color: #1e85b2;
 	border-left: 4px solid #1e85b2;
-	font-weight: 700;
 }
