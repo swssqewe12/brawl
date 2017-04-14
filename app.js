@@ -46,5 +46,6 @@ app.get('/s', function(req, res) {
 })
 
 app.listen(app.get('port'), function () {
-  console.log('brawl-db is up and running!')
+	process.stdout.write('\033c');
+	console.log('brawl-db is up and running!')
 })

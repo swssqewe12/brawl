@@ -28,9 +28,7 @@
 	margin-right: 5px;
 	color: white;
 	/*background-color: #888;*/
-	border-radius: 30px;
 	cursor: pointer;
-	overflow: hidden;
 }
 
 .c_piece.lightblue {
@@ -72,11 +70,15 @@
 
 .c_piece:first-child {
 	padding-left: 12px;
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
 }
 
 .c_piece:last-child {
 	padding-right: 12px;
 	border-right: none;
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 30px;
 }
 
 .c_hover-text {
@@ -84,20 +86,22 @@
 	position: absolute;
 	visibility: hidden;
 	white-space: nowrap;
-	top: -35px;
-	left: -7.5px;
-	padding: 5px;
+	top: -32px;
+	left: 0px;
+	padding: 5px 10px;
 	border: 2px solid black;
 	border-radius: 2px;
 	background: #111;
 	color: white;
 	font-family: inherit;
 	font-size: 14px;
+	line-height: initial;
 	opacity: 0;
 	transition: opacity 0.4s, visibility 0s 0.4s, top 0.4s;
 }
 
-.c_piece:hover .c_hover-text {
+.c_piece:hover .c_hover-text:not(:hover) {
+	overflow: visible;
 	visibility: visible;
 	opacity: 1;
 	top: -50px;
@@ -107,7 +111,7 @@
 .c_hover-text::after {
 	content: '';
 	position: absolute;
-	top: 26px;
+	top: 29px;
 	left: 8px;
 	border-left: 9px solid transparent;
 	border-right: 9px solid transparent;
@@ -117,7 +121,7 @@
 .c_hover-text::before {
 	content: '';
 	position: absolute;
-	top: 26px;
+	top: 29px;
 	left: 6px;
 	border-left: 11px solid transparent;
 	border-right: 11px solid transparent;
