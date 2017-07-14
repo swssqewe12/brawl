@@ -31,7 +31,9 @@
 			"cross",
 			"mirage",
 			"nix",
-			"mordex"
+			"mordex",
+			"yumico",
+			"artemis"
 		],
 		"legend": {
 			"bodvar": {
@@ -486,7 +488,7 @@
 			},
 			"mordex": {
 				"name": "Mordex",
-				"price": "5400 (launched at 7200)",
+				"price": "5400",
 				"stats": {
 					"strength": 6,
 					"dexterity": 4,
@@ -498,6 +500,36 @@
 					"gaunts"
 				],
 				"pic": "http://wiki.brawlhalla.com/images/thumb/a/a5/MordexAvatar1.png/100px-MordexAvatar1.png"
+			},
+			"yumico": {
+				"name": "Yumico",
+				"price": "5400",
+				"stats": {
+					"strength": 4,
+					"dexterity": 7,
+					"defense": 4,
+					"speed": 7
+				},
+				"weapons": [
+					"bow",
+					"hammer"
+				],
+				"pic": "http://wiki.brawlhalla.com/images/thumb/1/15/YumikoAvatar.png/100px-YumikoAvatar.png"
+			},
+			"artemis": {
+				"name": "Artemis",
+				"price": "5400",
+				"stats": {
+					"strength": 5,
+					"dexterity": 5,
+					"defense": 4,
+					"speed": 8
+				},
+				"weapons": [
+					"lance",
+					"scythe"
+				],
+				"pic": "http://wiki.brawlhalla.com/images/thumb/7/72/ArtemisAvatar2.png/100px-ArtemisAvatar2.png"
 			}
 		}
 	},
