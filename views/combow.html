@@ -28,12 +28,12 @@
 						<div class="c_segment">
 							<% for (var k in pieces) {
 								var p = pieces[k]; %><div class="c_piece
-										<% for (var l in combo_segment_colors) { 
+										<% for (var l in combo_segment_colors) {
 										    var o = combo_segment_colors[l];
 											var condition = o.if;
 											var color = o.then; %>
 											<% if (p.includes(condition)) { %>
-												<%=color%> 
+												<%=color%>
 											<% break; } %>
 										<% } %>
 								" onclick="toggle_info(this);">
@@ -56,9 +56,6 @@
 				</div>
 			</div>
 		<% } %>
-	</div>
-	<div id="copyright">
-		© brawl-db 2017+
 	</div>
 	<script>
 		function toggle_info(element) {
