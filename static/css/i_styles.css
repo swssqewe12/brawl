@@ -171,3 +171,22 @@
 	font-weight: 700;
 	z-index: 1093;
 }
+
+.i_sidenav {
+	list-style-type: none;
+}
+
+.i_sidenav li {
+	margin: 10px;
+	padding-left: 12px;
+	margin-left: 0px;
+	border-left: 4px solid transparent;
+	color: black;
+	line-height: 24px;
+	font-size: 15px;
+}
+
+.i_sidenav li.selected {
+	color: #1e85b2;
+	border-left: 4px solid #1e85b2;
+}

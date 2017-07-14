@@ -4,7 +4,7 @@
 	<link rel="stylesheet" type="text/css" href="/css/main.css">
 	<link rel="stylesheet" type="text/css" href="/css/styles.css">
 	<link rel="stylesheet" type="text/css" href="/css/c_styles.css">
-	<link rel="stylesheet" type="text/css" href="/css/legend_styles.css">
+	<link rel="stylesheet" type="text/css" href="/css/i_styles.css">
 </head>
 <body>
 	<div id="header">
@@ -15,19 +15,19 @@
 			<a href="/s"><div class="button">Stats</div></a>
 		</div>
 	</div>
-	<div class="legend_wrapper">
-		<div class="legend_left">
-			<div class="legend_pic">
+	<div class="i_wrapper">
+		<div class="i_left">
+			<div class="i_img">
 				<img src="<%=data.pic%>">
 				<p> <%=data.name%> </p>
 			</div>
-			<ul class="legend_sidenav">
-				<a href="/l/<%=legend%>"><li> Details </li></a>
-				<a href="/l/<%=legend%>"><li> Combos </li></a>
-				<a href="/c/e/<%=legend%>"><li class="selected"> Exclusive Combos </li></a>
+			<a class="btn" href="/l/<%=legend%>">BACK</a>
+			<ul class="i_sidenav">
+				<a href="/c/e/<%=legend%>"><li class="selected"> Combos + Strings </li></a>
+				<a href="/c/e/dr/<%=legend%>"><li> Dodge Reads </li></a>
 			</ul>
 		</div>
-		<div class="legend_right">
+		<div class="i_right">
 			<h2> <%=data.name%> Exclusive Combos </h2>
 			<% for (var weapon in weapons) { %>
 				<% var combos = weapons[weapon] %>
