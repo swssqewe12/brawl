@@ -629,6 +629,14 @@
 					"dn": 3,
 					"damage-min": 160,
 					"damage-max": 170
+				},
+				{
+					"S": ["DLight", "DAir", "Rec"],
+					"d": "Medium",
+					"dn": 1,
+					"damage-dealt": 38,
+					"damage-min": 0,
+					"damage-max": -1
 				}
 			],
 			"pic": "http://wiki.brawlhalla.com/images/d/de/HammerIcon.png"
@@ -865,21 +873,21 @@
 					"damage-max": 700
 				},
 				{
-					"s": ["DLight", ["MDodge","Rec"]],
+					"s": ["DLight", "Jump", ["MDodge","Rec"]],
 					"d": "",
 					"dn": 0,
 					"damage-min": 0,
 					"damage-max": 700
 				},
 				{
-					"s": ["DLight", ["MDodge","Nair"]],
+					"s": ["DLight", "Jump", ["MDodge","Nair"]],
 					"d": "",
 					"dn": 0,
 					"damage-min": 0,
 					"damage-max": 700
 				},
 				{
-					"s": ["DLight", ["MDodge","Dair"]],
+					"s": ["DLight", "Jump", ["MDodge","Dair"]],
 					"d": "",
 					"dn": 0,
 					"damage-min": 0,
@@ -928,6 +936,15 @@
 					"dn": 0,
 					"damage-min": 0,
 					"damage-max": -1
+				},
+				{
+					"name": "The Hundred",
+					"s": ["DLight", "Throw", "DLight", "Jump", "Pickup", "Nair", "Throw", "DLight", "Jump", "Pickup", "Nair", ["GC", "DLight"], ["MDodge", "Nair"], "Jump", "GP"],
+					"d": "Insane",
+					"dn": 4,
+					"damage-dealt": 100,
+					"damage-min": 0,
+					"damage-max": 0
 				}
 			],
 			"pic": "http://wiki.brawlhalla.com/images/d/d8/GauntletsIcon.png"
@@ -1051,6 +1068,8 @@
 		"MDodge": "Chase Dodge / Momentum Dodge",
 		"ChDodge": "Chain Dodge",
 		"xpivot": "X Pivot",
+		"Throw": "Throw Weapon",
+		"Pickup": "Pickup Weapon",
 		"Grounded": "In air but close to ground (I think)"
 	},
 	"combo_segment_colors": [
@@ -1067,6 +1086,9 @@
 		{"if": "GP", "then": "red"},
 		{"if": "Dodge", "then": "orange"},
 		{"if": "SD", "then": "gray"},
+		{"if": "Throw", "then": "darkblue"},
+		{"if": "Pickup", "then": "darkblue"},
+		{"if": "Jump", "then": "lightblue"},
 		{"if": "", "then": " "}
 	],
 	"combo_segment_infos": {
@@ -1132,5 +1154,5 @@
 			"use": ["air"]
 		}
 	}
-	
+
 }
